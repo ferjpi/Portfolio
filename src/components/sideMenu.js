@@ -25,24 +25,56 @@ const SideMenu = () => {
             </p>
             <div className="container_profile__social_media">
               <span className="social_media__icon">
-                <img
-                  src={inst}
-                  alt="instagram"
-                  className="media_icon--instagram"
-                />
+                <a
+                  href="https://www.instagram.com/fernandojpineda"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src={inst}
+                    alt="instagram"
+                    className="media_icon--instagram"
+                  />
+                </a>
               </span>
               <span className="social_media__icon">
-                <img src={github} alt="github" className="media_icon--github" />
+                <a
+                  href="https://github.com/ferjpi"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src={github}
+                    alt="github"
+                    className="media_icon--github"
+                  />
+                </a>
               </span>
               <span className="social_media__icon">
-                <img
-                  src={lin}
-                  alt="linkedin"
-                  className="media_icon--linkedin"
-                />
+                <a
+                  href="https://www.linkedin.com/in/fernando-pineda-trujillo-79453566/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src={lin}
+                    alt="linkedin"
+                    className="media_icon--linkedin"
+                  />
+                </a>
               </span>
               <span className="social_media__icon">
-                <img src={twit} alt="twitter" className="media_icon--twitter" />
+                <a
+                  href="https://twitter.com/fernandojpineda"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src={twit}
+                    alt="twitter"
+                    className="media_icon--twitter"
+                  />
+                </a>
               </span>
             </div>
           </div>

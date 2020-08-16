@@ -25,8 +25,8 @@ const ContentAboutMe = () => {
           I started learning about programming language. My First approach was
           with Python, then with HTML5, CSS3 and JavaScript. My strengths are in
           front end development working with JavaScript by my side but that
-          doesn't mean that I haven't work with NodeJs in the backend. I also
-          had worked with Ruby and ROR. I'm always trying to stay updated on new
+          doesn't mean that I haven't work in the backend. I also had worked
+          with Ruby and ROR. I'm always trying to stay updated on new
           technologies and better practices.
         </span>
       </div>
@@ -48,7 +48,7 @@ const ContentAboutMe = () => {
                 />
               </svg>
             </span>
-            HMTL5
+            HTML5
           </li>
           <li className="question_description__element">
             <span className="description_element__icon">
@@ -216,7 +216,7 @@ const ContentAboutMe = () => {
                 />
               </svg>
             </span>
-            POSTGRESQL / SQL / MONGODB
+            PostgresQL / SQL / MongoDB
           </li>
         </ul>
       </div>

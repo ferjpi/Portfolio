@@ -1,10 +1,20 @@
 :root {
   --primary-color: rgb(122, 179, 91);
-  --secondary-color: rgb(147, 183, 223);
+  --secondary-color: rgb(231, 231, 232);
+  --secondary-color--dark: rgb(150, 152, 155);
 }
 
-* {
+@font-face {
+  font-family: "Oswald";
+  scr: url("./fonts/Oswald-VariableFont_wght.ttf");
+  scr: url("./fonts/Oswald-VariableFont_wght.ttf") format("ttf"),
+    url("./fonts/Oswald-VariableFont_wght.ttf") format("truetype");
+}
+
+*,
+body {
   box-sizing: border-box;
+  font-family: "Oswald";
 }
 
 .btn {

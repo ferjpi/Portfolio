@@ -32,3 +32,28 @@
 
   margin-right: 15px;
 }
+
+ul.about_me_question__description {
+  list-style: none;
+  margin: 0;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.question_description__element {
+  display: flex;
+  align-items: center;
+}
+
+.description_element__icon {
+  margin-right: 15px;
+
+  width: 32px;
+  height: 32px;
+}
+
+.description_element__icon > * {
+  width: 32px;
+  height: 32px;
+}

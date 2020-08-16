@@ -1,6 +1,6 @@
 import React from "react"
 
-import profile from "../images/Profile.png"
+import profile from "../images/ProfileBig.jpg"
 
 // css
 import "./HeaderAboutMe.css"

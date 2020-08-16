@@ -20,8 +20,8 @@ const SideMenu = () => {
               <img src={profile} alt="profile" className="profile_img" />
             </div>
             <p className="container_profile__summary">
-              Hi, my name is Fernando Pineda and I'm a Full Stack JavaScript
-              developer. Welcome to my personal website
+              Hi, my name is Fernando Pineda and I'm a Web Software Engineer.
+              Welcome to my personal website
             </p>
             <div className="container_profile__social_media">
               <span className="social_media__icon">

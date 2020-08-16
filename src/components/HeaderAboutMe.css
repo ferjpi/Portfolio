@@ -1,0 +1,40 @@
+.header_about_me {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+
+  background: rgb(222, 231, 241);
+
+  padding: 30px;
+}
+
+.about_me_left__name {
+  margin-bottom: 10px;
+}
+
+.about_me_left__profession {
+  display: inline-block;
+
+  margin-bottom: 15px;
+}
+
+.header_about_me__right {
+  display: grid;
+  place-items: center;
+}
+
+.right__picture {
+  width: 300px;
+  height: 200px;
+}
+
+.buttons__portfolio {
+  background: var(--primary-color);
+
+  box-shadow: 2px 2px 2px rgba(122, 179, 91, 0.2);
+}
+
+.buttons__resume {
+  background: var(--secondary-color);
+
+  box-shadow: 2px 2px 2px rgba(147, 183, 223, 0.2);
+}

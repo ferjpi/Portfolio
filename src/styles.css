@@ -1,0 +1,18 @@
+:root {
+  --primary-color: rgb(122, 179, 91);
+  --secondary-color: rgb(147, 183, 223);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.btn {
+  border: none;
+  padding: 3px 13px;
+  outline: none;
+
+  margin: 0 10px;
+
+  font-size: 16px;
+}

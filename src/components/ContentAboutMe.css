@@ -1,5 +1,5 @@
 .content_about_me {
-  padding: 30px;
+  padding: 25px;
 }
 
 .about_me__question {
@@ -41,9 +41,19 @@ ul.about_me_question__description {
   grid-template-columns: 1fr 1fr;
 }
 
+.about_me_question__description {
+  font-size: 1.4em;
+}
+
+.about_me_left__description {
+  font-size: 1.4em;
+}
+
 .question_description__element {
   display: flex;
   align-items: center;
+
+  font-size: 1em;
 }
 
 .description_element__icon {

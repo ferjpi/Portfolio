@@ -22,12 +22,16 @@ const ContentAboutMe = () => {
         <h4 className="about_me_question__title">What's my background</h4>
         <span className="about_me_question__description">
           I always feel interested in technology and how things work, that's why
+          I started learning about programming language. My strengths are in
+          front end development working with JavaScript by my side but that
+          doesn't mean that I haven't work in the backend.
+          {/* I always feel interested in technology and how things work, that's why
           I started learning about programming language. My First approach was
           with Python, then with HTML5, CSS3 and JavaScript. My strengths are in
           front end development working with JavaScript by my side but that
           doesn't mean that I haven't work in the backend. I also had worked
           with Ruby and ROR. I'm always trying to stay updated on new
-          technologies and better practices.
+          technologies and better practices. */}
         </span>
       </div>
       <div className="about_me__question">

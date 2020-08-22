@@ -1,0 +1,11 @@
+.list_post_title {
+  margin-block-end: 0;
+}
+
+.list_post_title__link {
+  font-family: "Recursive", Arial, Helvetica, sans-serif;
+  font-size: 1.3em;
+  text-decoration: none;
+
+  color: var(--primary-text-color);
+}

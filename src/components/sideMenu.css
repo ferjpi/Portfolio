@@ -1,3 +1,10 @@
+#sideMenu {
+  position: fixed;
+
+  block-size: 100%;
+  max-inline-size: 25%;
+}
+
 .sideMenu_box {
   background: rgb(122, 179, 91); /*#c2eef4*/
   box-shadow: 2px 2px 2px rgba(122, 179, 91, 0.4);
@@ -21,6 +28,7 @@
 
 .container_profile__name {
   font-family: "RecursiveBasic";
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 600, "CRSV" 1, "slnt" 0;
   text-align: center;
 }
 
@@ -33,9 +41,10 @@
 
 .container_profile__summary {
   font-family: "RecursiveBasic";
-  font-size: 14px;
+  font-size: 1.2em;
+  text-align: left;
 
-  text-align: center;
+  inline-size: 80%;
 }
 
 .container_profile__social_media {
@@ -69,11 +78,25 @@
   margin-bottom: 20%;
 }
 
+.menu_list_item__link {
+  font-family: "Recursive", Arial;
+  font-size: 0.8rem;
+  text-decoration: none;
+
+  block-size: 100%;
+  display: flex;
+  align-items: center;
+
+  color: var(--primary-text-color);
+}
+
 .list_item__icon {
   margin-right: 10px;
+
+  block-size: 20px;
 }
 
 .list_item__icon svg {
-  width: 20px;
-  height: 20px;
+  inline-size: 20px;
+  block-size: 20px;
 }

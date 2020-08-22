@@ -1,7 +1,11 @@
 .main_container {
   display: grid;
-  grid-template-columns: minmax(400px, 25%) 1fr;
+  grid-template-columns: 1fr; /*minmax(400px, 25%) */
   grid-template-rows: auto;
 
   min-height: 100vh;
+}
+
+.content {
+  margin-inline-start: 25%;
 }

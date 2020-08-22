@@ -20,6 +20,7 @@
 }
 
 .container_profile__name {
+  font-family: "RecursiveBasic";
   text-align: center;
 }
 
@@ -31,7 +32,7 @@
 }
 
 .container_profile__summary {
-  font-family: "Oswald";
+  font-family: "RecursiveBasic";
   font-size: 14px;
 
   text-align: center;

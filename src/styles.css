@@ -4,17 +4,34 @@
   --secondary-color--dark: rgb(150, 152, 155);
 }
 
+/* @font-face {
+  font-family: "OpenTypeFont";
+  src: url("open_type_font.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-variation-settings: "wght" 400, "wdth" 300;
+} */
 @font-face {
-  font-family: "Oswald";
-  scr: url("./fonts/Oswald-VariableFont_wght.ttf");
-  scr: url("./fonts/Oswald-VariableFont_wght.ttf") format("ttf"),
-    url("./fonts/Oswald-VariableFont_wght.ttf") format("truetype");
+  font-family: "Recursive";
+  src: url("./fonts/Recursive_basic.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 600, "slnt" -15,
+    "CRSV" 0.5;
+}
+
+@font-face {
+  font-family: "RecursiveBasic";
+  src: url("./fonts/Recursive_basic.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 400, "slnt" 0, "CRSV" 1;
 }
 
 *,
 body {
   box-sizing: border-box;
-  font-family: "Oswald";
+  font-family: "Recursive";
 }
 
 .btn {

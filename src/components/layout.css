@@ -619,6 +619,30 @@ pre tt:after {
 .layout {
   min-block-size: 100vh;
 }
+
+.layout.dark {
+  background: var(--dark-background);
+  /* min-block-size: 100vh; */
+}
+
+.main_content.light {
+  color: var(--primary-text-color);
+}
+
+.main_content.dark {
+  color: var(--light-background);
+}
+
+p::selection {
+  background: yellow;
+  color: var(--primary-text-color);
+}
+
+code::selection {
+  background: yellow;
+  color: var(--primary-text-color);
+}
+
 @media only screen and (max-width: 480px) {
   html {
     font-size: 100%;

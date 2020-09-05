@@ -633,13 +633,28 @@ pre tt:after {
   color: var(--light-background);
 }
 
+.main_content > *,
+.main_content > p {
+  font-size: 1.6em;
+}
+
+p {
+  font-size: 1.6em;
+}
+
+h1 {
+  font-family: "RecursiveBasic";
+  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 600, "slnt" 0, "CRSV" 0.5;
+  font-size: 3.2em;
+}
+
 p::selection {
   background: yellow;
   color: var(--primary-text-color);
 }
 
 code::selection {
-  background: yellow;
+  background: orangered;
   color: var(--primary-text-color);
 }
 

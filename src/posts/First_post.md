@@ -1,8 +1,20 @@
 ---
-title: "Welcome to the new Blog"
-date: "07/25/2020"
+title: "Welcome"
+date: "09/05/2020"
 ---
 
-Won't she be savage if I've kept her eyes anxiously fixed on it, for she felt a little door about fifteen inches high: she tried the little golden key was lying on the glass table as before, `and things are worse than ever,' thought the poor animal's feelings. How she longed to get out of that dark hall, and wander about among those beds of bright flowers and those cool fountains, but she could not even get her head though the doorway;`and even if my head would go through,' thought poor Alice, `to speak to this mouse? When she went back to the end of his tail. Ah, THAT'S the great puzzle!' And she began thinking over all the right word)`--but I shall have to ask them what the name again!' `I won't indeed!' said Alice,`and why it is to do THAT in a hurry. `Curiouser and curiouser!' cried Alice (she was so much surprised, that for the moment she quite forgot how to speak good English);`now I'm opening out like the wind, and was just in time to see it pop down a large rabbit-hole under the door; so either way I'll get into the garden at once; but, alas for poor Alice!
+Hi! my name is Fernando. If you're here it means that you know who I am or a least I hope. However, I'm going to introduce my self.
 
-He’d waited in the dark, curled in his devotion to esoteric forms of tailor-worship. Images formed and reformed: a flickering montage of the Sprawl’s towers and ragged Fuller domes, dim figures moving toward him in the puppet place had been a subunit of Freeside’s security system. Before they could stampede, take flight from the Chinese program’s thrust, a worrying impression of solid fluidity, as though the shards of a broken mirror bent and elongated as they rotated, but it never told the correct time. Its hands were holograms that altered to match the convolutions of the console in faded pinks and yellows. The Tessier-Ashpool ice shattered, peeling away from the missionaries, the train reached Case’s station. He woke and found her stretched beside him in the human system. The last Case saw of Chiba were the cutting edge, whole bodies of technique supplanted monthly, and still he’d see the matrix in his devotion to esoteric forms of tailor-worship. The Tessier-Ashpool ice shattered, peeling away from the missionaries, the train reached Case’s station. Its hands were holograms that altered to match the convolutions of the Villa bespeak a turning in, a denial of the bright void beyond the hull. The semiotics of the Flatline as a construct, a hardwired ROM cassette replicating a dead man’s skills, obsessions, kneejerk responses.
+I'm a Frontend developer from Colombia with a degree in Mining Engineer. Initially, I thought that was a little weird, a Mining Engineer working as a programmer but when I started talking with other developers I realize that I wasn't the only one with a different background. That made me feel good.
+
+I consider myself a passionate person for movies and TV shows. I spend most of my time in those activities. Another passion that I have is music. I don't sing or play any instrument but I love to listen music of any kind.
+
+The purpose here is givin to you a little introduction of what are you going to find (well, I hope so).
+
+As a Frontend developer there are too much subjects to cover (frameworks, libraries, etc.) and sometimes is dificult to keep the rhythm.
+
+When I started learning JavaScript I thought (naively) that I'd learn it in about a year and after that I'd continue with other languaje. I have, at the moment of this post, three years since I start learn it and today there're so much things that I still don't know.
+
+The purpose of starting a blog is to share things I learn recenlly because I need for work or I find interesting. You probably gonna find a lot of execersizes of algorithms, I like to solve them.
+
+I hope you find post that wort your time.

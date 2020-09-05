@@ -15,7 +15,7 @@ const posts = ({ data }) => {
   return (
     <MainContainer>
       <div className="content">
-        <SEO title="Home" />
+        <SEO title="Blog" />
         <section className="posts_container">
           <h3 className="posts_title">Posts</h3>
           {myData.map(({ node }) => (

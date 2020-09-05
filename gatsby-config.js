@@ -2,7 +2,8 @@ module.exports = {
   siteMetadata: {
     title: `Portfolio`,
     description: `Portfolio of Fernando Pineda. Here you can see he's skills and topics about programming`,
-    author: `@ferjpi`,
+    author: `@fernandojpineda`,
+    url: `http://www.ferjpi.co`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

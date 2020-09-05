@@ -6,6 +6,7 @@
 
   --dark-background: rgb(26, 26, 26);
   --light-background: rgb(255, 255, 255);
+  --deckgo-highlight-code-font-size: 1.6em;
 }
 
 @font-face {
@@ -45,8 +46,4 @@ body {
 #___gatsby,
 #gatsby-focus-wrapper {
   block-size: 100%;
-}
-
-code {
-  font-size: 1.6em;
 }

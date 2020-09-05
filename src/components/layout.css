@@ -658,6 +658,14 @@ code::selection {
   color: var(--primary-text-color);
 }
 
+code {
+  font-size: 1.6em !important;
+}
+
+div.deckgo-highlight-code-container code {
+  font-size: 1.6em !important;
+}
+
 @media only screen and (max-width: 480px) {
   html {
     font-size: 100%;

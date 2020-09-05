@@ -9,7 +9,7 @@ import SEO from "../components/seo"
 const Portfolio = () => (
   <MainContainer>
     <div className="content">
-      <SEO title="Home" />
+      <SEO title="portfolio" />
       <PortfolioComp />
     </div>
   </MainContainer>

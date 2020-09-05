@@ -1,6 +1,6 @@
 import React, { createContext, useReducer } from "react"
 
-const initialTheme = "light"
+const initialTheme = "dark"
 
 const reducer = (state, action) => {
   const { type } = action

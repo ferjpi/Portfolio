@@ -1,12 +1,25 @@
 module.exports = {
   siteMetadata: {
     title: `Portfolio`,
-    description: `Portfolio of Fernando Pineda. Here you can see he's skills and topics about programming that he writes`,
+    description: `Portfolio of Fernando Pineda. Here you can see he's skills and topics about programming`,
     author: `@ferjpi`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
-    `gatsby-transformer-remark`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-highlight-code`,
+            options: {
+              terminal: "carbon",
+              theme: "dracula",
+            },
+          },
+        ],
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {

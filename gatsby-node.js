@@ -37,6 +37,9 @@ exports.createPages = async ({ graphql, actions }) => {
             fields {
               slug
             }
+            frontmatter {
+              title
+            }
           }
         }
       }
@@ -49,6 +52,7 @@ exports.createPages = async ({ graphql, actions }) => {
       component: path.resolve("./src/posts/PostPage.js"),
       context: {
         slug: node.fields.slug,
+        title: node.frontmatter.title,
       },
     })
   })

@@ -7,28 +7,18 @@
 
 import React, { useContext } from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
-import Theme, { ThemeContext } from "./theme/theme"
+// import { useStaticQuery, graphql } from "gatsby"
+import { ThemeContext } from "./theme/theme"
 
 import Header from "./header"
 import "./layout.css"
 
-const Layout = ({ children }) => {
+const Layout = ({ children, postCtx }) => {
   const { state } = useContext(ThemeContext)
-
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
 
   return (
     <div className={`layout ${state}`}>
-      <Header siteTitle={data.site.siteMetadata.title} />
+      <Header postCtx={postCtx} />
       <div
         style={{
           margin: `0 auto`,

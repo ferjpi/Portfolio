@@ -46,3 +46,7 @@ body {
 #gatsby-focus-wrapper {
   block-size: 100%;
 }
+
+code {
+  font-size: 1.6em;
+}

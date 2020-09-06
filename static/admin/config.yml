@@ -3,6 +3,7 @@ backend:
   repo: ferjpi/Portfolio
 
 media_folder: static/assets
+public_folder: /assets
 
 collections:
   - name: post

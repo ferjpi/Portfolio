@@ -12,7 +12,6 @@ import "./header.css"
 const Header = ({ postCtx }) => {
   const { state } = useContext(ThemeContext)
 
-  // console.log("site title: " + siteTitle)
   return (
     <header className={`header_container ${state}`}>
       <div className="header_container__inner">
@@ -30,8 +29,11 @@ const Header = ({ postCtx }) => {
           </h1>
           <span className="header_container_inner__line">{">>"}</span>
           <h1 className="header_container_inner__title">
-            <Link to={postCtx.slug} className="container_inner_title__link">
-              {postCtx.title}
+            <Link
+              to={postCtx && postCtx.slug}
+              className="container_inner_title__link"
+            >
+              {postCtx && postCtx.title}
             </Link>
           </h1>
         </div>

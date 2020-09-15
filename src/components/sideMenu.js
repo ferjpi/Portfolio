@@ -32,8 +32,8 @@ const SideMenu = () => {
             >
               <span>
                 <svg
-                  width="35px"
-                  height="35px"
+                  width="30px"
+                  height="30px"
                   viewBox="0 0 35 35"
                   version="1.1"
                   space="preserve"

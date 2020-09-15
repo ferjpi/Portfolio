@@ -9,3 +9,9 @@
 .content {
   margin-inline-start: 25%;
 }
+
+@media screen and (max-width: 375px) {
+  .content {
+    margin-inline-start: 0;
+  }
+}

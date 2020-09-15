@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import { Link } from "gatsby"
 
 import profile from "../images/Profile.png"
@@ -11,11 +11,48 @@ import twit from "../images/Twitter.png"
 import "./sideMenu.css"
 
 const SideMenu = () => {
+  const [showMenu, setShowMenu] = useState(false)
+
   return (
     <div id="sideMenu">
-      <div className="sideMenu_box">
+      <menu
+        className="container_profile__menu_mobile main"
+        onClick={() => setShowMenu(true)}
+      >
+        <span className="profile_menu_mobile__line"></span>
+        <span className="profile_menu_mobile__line"></span>
+        <span className="profile_menu_mobile__line"></span>
+      </menu>
+      <div className={showMenu ? "sideMenu_box show" : "sideMenu_box hide"}>
         <div className="sideMenu_box__container">
           <div className="box_container__profile">
+            <menu
+              className="container_profile__menu_mobile"
+              onClick={() => setShowMenu(false)}
+            >
+              <span>
+                <svg
+                  width="35px"
+                  height="35px"
+                  viewBox="0 0 35 35"
+                  version="1.1"
+                  space="preserve"
+                  fillRule="evenodd"
+                  clipRule="evenodd"
+                  strokeLinejoin="round"
+                  strokeMiterlimit="2"
+                >
+                  <path
+                    id="Cancel"
+                    d="M17.061,14.939l14.939,-14.939c0.707,0.707 1.414,1.414 2.121,2.121l-14.939,14.94l14.939,14.939l-2.121,2.121l-14.939,-14.939l-14.94,14.939l-2.121,-2.121l14.939,-14.939l-14.939,-14.94l2.121,-2.121l14.94,14.939Z"
+                    fill="#fff"
+                  />
+                </svg>
+              </span>
+              {/* <span className="profile_menu_mobile__line"></span>
+              <span className="profile_menu_mobile__line"></span>
+              <span className="profile_menu_mobile__line"></span> */}
+            </menu>
             <h3 className="container_profile__name">Fernando Pineda</h3>
             <div className="container_profile__img">
               <img src={profile} alt="profile" className="profile_img" />
@@ -91,7 +128,7 @@ const SideMenu = () => {
                       <path d="M48.3 41.2C54.8 37.2 59 29.3 59 22c0-10.4-8.5-22-20-22S19 11.6 19 22c0 7.3 4.2 15.2 10.7 19.2C14.3 45.3 3 59.4 3 76c0 1.1.9 2 2 2h68c1.1 0 2-.9 2-2 0-16.6-11.3-30.7-26.7-34.8zM23 22c0-10.3 8.5-18 16-18s16 7.7 16 18-8.5 18-16 18-16-7.7-16-18zM7.1 74c1-16.7 15-30 31.9-30s30.9 13.3 31.9 30H7.1z" />
                     </svg>
                   </span>
-                  About Me
+                  <span className="list_item__text">About Me</span>
                 </Link>
               </li>
               <li className="menu_list__item">
@@ -101,17 +138,10 @@ const SideMenu = () => {
                       <path d="M74 7H6a6.02 6.02 0 0 0-6 6v42a6.02 6.02 0 0 0 6 6h22v4.2c-.1.4-.9 1.5-1.3 2-1.1 1.4-2.2 2.8-1.4 4.4.3.7 1.1 1.4 2.7 1.4h23c1 0 3.3 0 4.1-1.8s-.6-3.2-1.8-4.5c-.4-.5-1.1-1.2-1.3-1.6V61h22a6.02 6.02 0 0 0 6-6V13a6.02 6.02 0 0 0-6-6zM30.3 69c.9-1.1 1.7-2.4 1.7-3.8V61h16v4.2c0 1.4 1 2.7 2 3.8H30.3zM76 55c0 1.1-.9 2-2 2H6c-1.1 0-2-.9-2-2v-6h72v6zm0-10H4V13c0-1.1.9-2 2-2h68c1.1 0 2 .9 2 2v32z" />
                     </svg>
                   </span>
-                  Portfolio
+                  <span className="list_item__text">Portfolio</span>
                 </Link>
               </li>
-              {/* <li className="menu_list__item">
-                <span className="list_item__icon">
-                  <svg width="792" height="792" viewBox="0 0 792 792">
-                    <path d="M216 432h360v36H216zm0 108h360v36H216zm0-432h216v36H216zm0 540h360v36H216zm0-324h360v36H216zm450.54 468S684 792 684 774.396V158.4L526.896 0H125.46S108 0 108 17.604V774.36C108 792 125.46 792 125.46 792h541.08zM144 36h360v108c0 36 36 36 36 36h108v576H144V36zm72 180h360v36H216z" />
-                  </svg>
-                </span>
-                Resume
-              </li> */}
+
               <li className="menu_list__item">
                 <Link to="/posts" className="menu_list_item__link">
                   <span className="list_item__icon">
@@ -126,7 +156,7 @@ const SideMenu = () => {
                       <path d="M353.886 229.567h95.652a9.57 9.57 0 0 1 9.564 9.565v153.004c0 5.263-4.284 9.566-9.564 9.566h-95.652c-5.262 0-9.565-4.285-9.565-9.566V239.132c0-5.26 4.304-9.565 9.565-9.565h0zm86.088 19.13h-76.522v133.875h76.522V248.698zm-181.74-76.522a9.57 9.57 0 0 1-9.565-9.565c0-5.26 4.284-9.565 9.565-9.565H449.52a9.57 9.57 0 0 1 9.564 9.565 9.57 9.57 0 0 1-9.564 9.565H258.233zM86.118 401.723a9.57 9.57 0 0 1-9.565-9.563 9.57 9.57 0 0 1 9.565-9.566h191.266a9.57 9.57 0 0 1 9.565 9.566c0 5.26-4.284 9.563-9.565 9.563H86.118z" />
                     </svg>
                   </span>
-                  Blog
+                  <span className="list_item__text">Blog</span>
                 </Link>
               </li>
             </ul>

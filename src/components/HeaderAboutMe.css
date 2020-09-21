@@ -50,7 +50,7 @@
   box-shadow: 2px 2px 2px rgba(147, 183, 223, 0.2);
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 414px) {
   .header_about_me {
     grid-template-columns: 1fr;
   }

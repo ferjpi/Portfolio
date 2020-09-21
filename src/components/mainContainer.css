@@ -10,7 +10,7 @@
   margin-inline-start: 25%;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 414px) {
   .content {
     margin-inline-start: 0;
   }

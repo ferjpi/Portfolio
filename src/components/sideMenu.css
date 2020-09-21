@@ -106,6 +106,21 @@
   display: none;
 }
 
+@media screen and (max-width: 768px) {
+  .profile_img {
+    inline-size: 150px;
+    block-size: 150px;
+  }
+
+  .list_item__text {
+    font-size: 1em;
+  }
+
+  .container_menu__list {
+    padding: 0 15%;
+  }
+}
+
 @media screen and (max-width: 414px) {
   .container_profile__menu_mobile.main {
     display: flex;
@@ -115,13 +130,13 @@
 
     background: rgb(122, 179, 91);
 
-    block-size: auto;
+    inline-size: 70px;
+    block-size: 50px;
+    /* block-size: auto; */
     padding-inline-start: 0;
     margin: 0;
 
     cursor: pointer;
-
-    block-size: 50px;
 
     z-index: 0;
     position: fixed;

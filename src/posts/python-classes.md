@@ -42,7 +42,7 @@ You must differentiate between class attributes and instance attributes. These t
 For example.
 
 
-   class Person():
+    class Person():
 
      is_human= True
      has_hear= True

@@ -5,14 +5,14 @@ import { graphql } from "gatsby"
 import { defineCustomElements as deckDeckGoElement } from "@deckdeckgo/highlight-code/dist/loader"
 
 import Theme from "../components/theme/theme"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 
 deckDeckGoElement()
 
 function PostPage({ data, location, pageContext }) {
   return (
     <Theme>
-      <SEO title={pageContext.title} />
+      <Seo title={pageContext.title} />
       <Layout location={location} postCtx={pageContext}>
         <div>
           <h1>{data.markdownRemark.frontmatter.title}</h1>

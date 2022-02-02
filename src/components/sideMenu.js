@@ -49,9 +49,6 @@ const SideMenu = () => {
                   />
                 </svg>
               </span>
-              {/* <span className="profile_menu_mobile__line"></span>
-              <span className="profile_menu_mobile__line"></span>
-              <span className="profile_menu_mobile__line"></span> */}
             </menu>
             <h3 className="container_profile__name">Fernando Pineda</h3>
             <div className="container_profile__img">

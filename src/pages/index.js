@@ -3,12 +3,12 @@ import React from "react"
 import MainContainer from "../components/mainContainer"
 import HeaderAboutMe from "../components/HeaderAboutMe"
 import ContentAboutMe from "../components/ContentAboutMe"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 
 const IndexPage = () => (
   <MainContainer>
     <div className="content">
-      <SEO title="Home" />
+      <Seo title="Home" />
       <HeaderAboutMe />
       <ContentAboutMe />
     </div>

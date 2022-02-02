@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 
 import MainContainer from "../components/mainContainer"
 import PostListing from "../components/post/PostListing"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 
 // css
 import "./posts.css"
@@ -15,7 +15,7 @@ const posts = ({ data }) => {
   return (
     <MainContainer>
       <div className="content">
-        <SEO title="Blog" />
+        <Seo title="Blog" />
         <section className="posts_container">
           <h3 className="posts_title">Posts</h3>
           {myData.map(({ node }) => (

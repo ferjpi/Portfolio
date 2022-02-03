@@ -1,8 +1,6 @@
 import React from "react"
 
 import MainContainer from "../components/mainContainer"
-// import HeaderAboutMe from "../components/HeaderAboutMe"
-// import ContentAboutMe from "../components/ContentAboutMe"
 import PortfolioComp from "../components/portfolio"
 import Seo from "../components/seo"
 

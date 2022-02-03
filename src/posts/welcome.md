@@ -11,10 +11,10 @@ I consider myself a passionate person for movies and TV shows. I spend most of m
 
 The purpose here is givin to you a little introduction of what are you going to find (well, I hope so).
 
-As a Frontend developer there are too much subjects to cover (frameworks, libraries, etc.) and sometimes is dificult to keep the rhythm.
+As a Frontend developer there are too much subjects to cover (frameworks, libraries, etc.) and sometimes is difficult to keep the rhythm.
 
-When I started learning JavaScript I thought (naively) that I'd learn it in about a year and after that I'd continue with other languaje. I have, at the moment of this post, three years since I start learn it and today there're so much things that I still don't know.
+When I started learning JavaScript I thought (naively) that I'd learn it in about a year and after that I'd continue with other language. I have, at the moment of this post, three years since I start learn it and today there're so much things that I still don't know.
 
-The purpose of starting a blog is to share things I learn recenlly because I need for work or I find interesting. You probably gonna find a lot of execersizes of algorithms, I like to solve them.
+The purpose of starting a blog is to share things I learn recently because I need for work or I find interesting. You probably gonna find a lot of exercises of algorithms, I like to solve them.
 
 I hope you find post that wort your time.

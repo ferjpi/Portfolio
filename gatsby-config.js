@@ -19,6 +19,12 @@ module.exports = {
               theme: "dracula",
             },
           },
+          {
+            resolve: 'gatsby-remark-embed-carbon',
+            options: {
+              width: '100%',
+            }
+          }
         ],
       },
     },
@@ -69,8 +75,5 @@ module.exports = {
       },
     },
 
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
   ],
 }

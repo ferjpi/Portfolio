@@ -3,7 +3,7 @@ title: Python classes
 date: 2021-03-17T22:25:40.588Z
 image: /assets/closurescope.png
 ---
-*** All the content below is subjective, and its a way to reforce the new things I'm learning***
+*** All the content below is subjective, and its a way to reinforce the new things I'm learning***
 
 Python takes inspiration from classes in _C++_ and _Modula-3_. It allows to create and build objects that can inherit or share the same type. These are call instances.
 

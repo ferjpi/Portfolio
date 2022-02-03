@@ -11,7 +11,6 @@ import "./posts.css"
 const posts = ({ data }) => {
   const myData = data.allMarkdownRemark.edges
 
-  console.log("data", myData)
   return (
     <MainContainer>
       <div className="content">
@@ -31,7 +30,7 @@ export default posts
 
 export const query = graphql`
   query Posts {
-    allMarkdownRemark {
+    allMarkdownRemark(sort: {fields: frontmatter___date, order: ASC}) {
       edges {
         node {
           id

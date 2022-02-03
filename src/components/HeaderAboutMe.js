@@ -11,7 +11,7 @@ const HeaderAboutMe = () => {
     <div className="header_about_me">
       <div className="header_about_me__left">
         <h2 className="about_me_left__name">Fernando Pineda</h2>
-        <span className="about_me_left__profession">Web Software Engineer</span>
+        <span className="about_me_left__profession">Full Stack Developer</span>
         <p className="about_me_left__description">
           I'm a software engineer specialized in frontend development more
           exactly as JavaScript as my main programming language. The framework

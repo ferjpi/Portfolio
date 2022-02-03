@@ -1,0 +1,22 @@
+em a {
+  font-size: 1.3em;
+  color: orange;
+}
+
+p a {
+  font-size: 1em;
+  color: orange;
+}
+
+p em,
+p strong {
+  font-size: 1em;
+}
+
+p img {
+  inline-size: 60%;
+}
+
+.portrait_img {
+  inline-size: 100%;
+}

@@ -5,22 +5,15 @@ image: /assets/website-design-and-development.jpeg
 ---
 I could say that this is the way JavaScript handles inheritance. And the way to do it is through a chain of prototypes.
 
-
-
 There are many ways to do prototype chains. In this article, I'm gonna try to explain three ways to do it.
-
-
 
 * Functional
 * Constructor function
 * Class-syntax constructor
 
-
-
 ## Functional:
 
 This way of doing prototypal inheritance consist in using Object.create:
-
 
 
 ```
@@ -109,28 +102,28 @@ This approach consists of using the prototypes of the functions and set prototyp
 
 
 ```
-  function Wolf (name) { 
+  function Wolf (name) {
     this.name = name
   }
 
 
-  Wolf.prototype.howl = function () { 
+  Wolf.prototype.howl = function () {
     console.log(this.name + ': awoooooooo')
   }
 
-  function Dog (name) { 
+  function Dog (name) {
     Wolf.call(this, name + ' the dog')
   }
 
-  function inherit (proto) { 
-    function ChainLink(){} 
-    ChainLink.prototype = proto 
+  function inherit (proto) {
+    function ChainLink(){}
+    ChainLink.prototype = proto
     return new ChainLink()
   }
 
   Dog.prototype = inherit(Wolf.prototype)
 
-  Dog.prototype.woof = function () { 
+  Dog.prototype.woof = function () {
     console.log(this.name + ': woof')
   }
 

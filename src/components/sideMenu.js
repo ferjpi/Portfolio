@@ -50,14 +50,9 @@ const SideMenu = () => {
                 </svg>
               </span>
             </menu>
-            <h3 className="container_profile__name">Fernando Pineda</h3>
             <div className="container_profile__img">
               <img src={profile} alt="profile" className="profile_img" />
             </div>
-            <p className="container_profile__summary">
-              Hi, my name is Fernando Pineda and I'm a Web Software Engineer.
-              Welcome to my personal website
-            </p>
             <div className="container_profile__social_media">
               <span className="social_media__icon">
                 <a

@@ -4,27 +4,6 @@
   "description": "Portfolio of Fernando Pineda. Here you can see he's skills and topics about programming",
   "version": "0.1.0",
   "author": "ferjpi <fernandojpt1203@hotmail.com>",
-  "dependencies": {
-    "@deckdeckgo/highlight-code": "^2.0.0",
-    "gatsby": "^4.6.1",
-    "gatsby-plugin-google-gtag": "^4.6.0",
-    "gatsby-plugin-image": "^2.6.0",
-    "gatsby-plugin-manifest": "^4.6.0",
-    "gatsby-plugin-netlify-cms": "^6.6.0",
-    "gatsby-plugin-offline": "^5.6.0",
-    "gatsby-plugin-react-helmet": "^5.6.0",
-    "gatsby-plugin-sharp": "^4.6.0",
-    "gatsby-remark-embed-carbon": "^0.0.1",
-    "gatsby-remark-highlight-code": "^3.2.0",
-    "gatsby-source-filesystem": "^4.6.0",
-    "gatsby-transformer-remark": "^5.6.0",
-    "gatsby-transformer-sharp": "^4.6.0",
-    "netlify-cms-app": "^2.15.65",
-    "prop-types": "^15.8.1",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-helmet": "^6.1.0"
-  },
   "devDependencies": {
     "prettier": "2.5.1"
   },
@@ -50,5 +29,33 @@
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
+  },
+  "dependencies": {
+    "@deckdeckgo/highlight-code": "^3.6.0",
+    "babel-plugin-styled-components": "^2.0.2",
+    "framer-motion": "^6.2.6",
+    "gatsby": "^4.7.1",
+    "gatsby-plugin-google-analytics": "^4.7.0",
+    "gatsby-plugin-google-gtag": "^4.7.0",
+    "gatsby-plugin-image": "^2.7.0",
+    "gatsby-plugin-manifest": "^4.7.0",
+    "gatsby-plugin-netlify-cms": "^6.7.0",
+    "gatsby-plugin-offline": "^5.7.0",
+    "gatsby-plugin-react-helmet": "^5.7.0",
+    "gatsby-plugin-sharp": "^4.7.0",
+    "gatsby-plugin-sitemap": "^5.7.0",
+    "gatsby-plugin-styled-components": "^5.7.0",
+    "gatsby-remark-embed-carbon": "^0.0.1",
+    "gatsby-remark-highlight-code": "^3.2.0",
+    "gatsby-source-filesystem": "^4.7.0",
+    "gatsby-transformer-remark": "^5.7.0",
+    "gatsby-transformer-sharp": "^4.7.0",
+    "netlify-cms-app": "^2.15.0-beta.0",
+    "normalize.css": "^8.0.1",
+    "prop-types": "^15.8.1",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
+    "react-helmet": "^6.1.0",
+    "styled-components": "^5.3.3"
   }
 }

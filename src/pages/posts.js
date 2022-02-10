@@ -28,22 +28,22 @@ const posts = ({ data }) => {
 
 export default posts
 
-export const query = graphql`
-  query Posts {
-    allMarkdownRemark(sort: {fields: frontmatter___date, order: ASC}) {
-      edges {
-        node {
-          id
-          frontmatter {
-            title
-            date
-          }
-          excerpt
-          fields {
-            slug
-          }
-        }
-      }
-    }
-  }
-`
+// export const query = graphql`
+//   query Posts {
+//     allMarkdownRemark(sort: {fields: frontmatter___date, order: ASC}) {
+//       edges {
+//         node {
+//           id
+//           frontmatter {
+//             title
+//             date
+//           }
+//           excerpt
+//           fields {
+//             slug
+//           }
+//         }
+//       }
+//     }
+//   }
+// `

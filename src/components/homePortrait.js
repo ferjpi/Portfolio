@@ -28,6 +28,11 @@ const DescriptionStyle = Styled.div`
   flex-grow: 1;
   display: flex;
   align-items: flex-end;
+  justify-content: flex-end;
+
+  p {
+    inline-size: 40vw;
+  }
 `
 
 function HomePortrait() {
@@ -55,15 +60,7 @@ function HomePortrait() {
           <h1>Full Stack Developer</h1>
         </ResponsiveTitle>
 
-        <DescriptionStyle>
-          <p>
-            I'm a software engineer specialized in frontend development more
-            exactly as JavaScript as my main programming language. The framework
-            that I use to create amazing websites is ReactJs but like a curious
-            person I am, I have a background in other languages like Python and
-            Ruby.
-          </p>
-        </DescriptionStyle>
+        <DescriptionStyle></DescriptionStyle>
       </MainContainerStyle>
     </>
   )

@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import Styled from "styled-components"
 import noise from "../images/noise2.png"
 import { motion } from "framer-motion"
@@ -36,15 +36,23 @@ const BodyContainer = Styled.div`
 `
 
 function Card({ title, img, date, desc }) {
+  const [hoverImg, setHoverImg] = useState({ y: 0, scale: 1 })
   return (
     <>
       <CardContainer
         as={motion.div}
         initial={{ y: 0 }}
         whileHover={{ y: -10, scale: 1.07 }}
+        onMouseEnter={() => setHoverImg({ y: -35, scale: 1.1 })}
+        onMouseLeave={() => setHoverImg({ y: 0, scale: 1 })}
       >
         <ImgContainer>
-          <img src={img} alt="dog" />
+          <motion.img
+            src={img}
+            alt="dog"
+            initial={{ y: 0 }}
+            whileHover={{ y: -25, scale: 1.15 }}
+          />
         </ImgContainer>
         <BodyContainer>
           <h4>{title}</h4>

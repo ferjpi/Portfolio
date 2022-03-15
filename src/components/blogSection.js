@@ -12,7 +12,6 @@ const SectionTitle = Styled.h2`
 `
 
 const SectionList = Styled.div`
-  border: 1px solid red;
   display: flex;
   justify-content: space-evenly;
 `

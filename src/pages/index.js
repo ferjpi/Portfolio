@@ -17,7 +17,6 @@ const IndexPage = ({ data }) => {
   useEffect(
     () =>
       yRange.onChange(v => {
-        console.log("v ", v)
         console.log("yRange.current ", yRange.current)
         setCurrentPercent(Math.trunc(yRange.current))
       }),

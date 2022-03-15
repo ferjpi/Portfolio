@@ -24,17 +24,6 @@ const ResponsiveTitle = Styled.div`
   }
 `
 
-const DescriptionStyle = Styled.div`
-  flex-grow: 1;
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
-
-  p {
-    inline-size: 40vw;
-  }
-`
-
 function HomePortrait() {
   return (
     <>
@@ -59,8 +48,6 @@ function HomePortrait() {
         <ResponsiveTitle>
           <h1>Full Stack Developer</h1>
         </ResponsiveTitle>
-
-        <DescriptionStyle></DescriptionStyle>
       </MainContainerStyle>
     </>
   )

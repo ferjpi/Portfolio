@@ -1,17 +1,24 @@
-import React from "react"
+import React, { useState } from "react"
 import Styled from "styled-components"
 import { motion } from "framer-motion"
 import imgProfile from "../images/ProfileBig_cropped.png"
 
 const ProfileContainer = Styled.section`
-  block-size: clamp(30vh, 40vh, 50vh);
+  min-block-size: 50vh;
   inline-size: 100%;
   display: flex;
   justify-content: flex-end;
 
+  padding: 2rem;
+
   div {
     inline-size: 40vw;
   }
+`
+
+const SpanHi = Styled.span`
+  font-family: "RecursiveBasic";
+  font-size: 1.6em;
 `
 
 const ImgStyle = Styled.img`
@@ -22,20 +29,41 @@ const ImgStyle = Styled.img`
 `
 
 function Profile() {
+  const [animWord, setAnimWord] = useState(false)
   return (
     <ProfileContainer>
       <div>
         <ImgStyle
           as={motion.img}
           src={imgProfile}
-          animate={{ y: [0, -20, 0], scale: [1, 1.2, 1] }}
+          whileHover={{ y: -20, scale: 1.25 }}
+          onMouseEnter={() => setAnimWord(true)}
+          onMouseLeave={() => setAnimWord(false)}
         />
         <p>
-          I'm a software engineer specialized in frontend development more
-          exactly as JavaScript as my main programming language. The framework
-          that I use to create amazing websites is ReactJs but like a curious
-          person I am, I have a background in other languages like Python and
-          Ruby.
+          <SpanHi
+            as={motion.span}
+            initial={{ background: "none" }}
+            animate={
+              animWord ? { background: "yellow" } : { background: "none" }
+            }
+            transition={{ duration: 1, type: "spring" }}
+          >
+            Hi!
+          </SpanHi>{" "}
+          my name is Fernando. I live in Bogotá, Colombia.
+          <br />
+          <br />
+          I have experience working with frontend frameworks like ReactJS and
+          AngularJS, also I've been getting into backend tech with NodeJS
+          (ExpressJS and Fastify). <br />
+          <br />
+          I'd acquired some expertise in NoSQL with MongoDB and relational
+          database with SQL and PostgresQL. And now, I'm experimenting with
+          GraphQL.
+          <br />
+          <br />
+          My new interest is Flutter and the Dart language.
         </p>
       </div>
     </ProfileContainer>

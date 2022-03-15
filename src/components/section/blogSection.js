@@ -1,6 +1,6 @@
 import React from "react"
 import Styled from "styled-components"
-import Card from "./card"
+import Card from "../card"
 
 const BlogContainerStyle = Styled.section`
   padding: 2rem;

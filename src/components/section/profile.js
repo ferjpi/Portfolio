@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import Styled from "styled-components"
 import { motion } from "framer-motion"
-import imgProfile from "../images/ProfileBig_cropped.png"
+import imgProfile from "../../images/ProfileBig_cropped.png"
 
 const ProfileContainer = Styled.section`
   min-block-size: 50vh;

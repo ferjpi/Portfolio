@@ -2,8 +2,9 @@ import React, { useEffect, useState } from "react"
 import { graphql } from "gatsby"
 import { useTransform, useViewportScroll, motion } from "framer-motion"
 import HomePortrait from "../components/homePortrait"
-import BlogSection from "../components/blogSection"
-import Profile from "../components/profile"
+import BlogSection from "../components/section/blogSection"
+import Profile from "../components/section/profile"
+import Projects from "../components/section/projects"
 import "normalize.css"
 
 const IndexPage = ({ data }) => {
@@ -17,7 +18,6 @@ const IndexPage = ({ data }) => {
   useEffect(
     () =>
       yRange.onChange(v => {
-        console.log("yRange.current ", yRange.current)
         setCurrentPercent(Math.trunc(yRange.current))
       }),
     [yRange]
@@ -42,6 +42,7 @@ const IndexPage = ({ data }) => {
       <HomePortrait />
       <Profile />
       <BlogSection blogData={blogData} />
+      <Projects />
     </motion.main>
   )
 }

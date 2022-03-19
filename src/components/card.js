@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import Styled from "styled-components"
-import noise from "../images/noise2.png"
+import { Link } from "gatsby"
 import { motion } from "framer-motion"
 
 const CardContainer = Styled.div`
@@ -35,7 +35,15 @@ const BodyContainer = Styled.div`
   padding: 5px;
 `
 
-function Card({ title, img, date, desc, title_icon = null }) {
+function Card({
+  title,
+  img,
+  date,
+  desc,
+  slug,
+  isLink = false,
+  title_icon = null,
+}) {
   return (
     <>
       <CardContainer
@@ -43,18 +51,39 @@ function Card({ title, img, date, desc, title_icon = null }) {
         initial={{ y: 0 }}
         whileHover={{ y: -10, scale: 1.07 }}
       >
-        <ImgContainer>
-          <motion.img
-            src={img}
-            alt="dog"
-            initial={{ y: 0 }}
-            whileHover={{ y: -25, scale: 1.15 }}
-          />
-        </ImgContainer>
+        {isLink ? (
+          <Link to={slug}>
+            <ImgContainer>
+              <motion.img
+                src={img}
+                alt="dog"
+                initial={{ y: 0 }}
+                whileHover={{ y: -25, scale: 1.15 }}
+              />
+            </ImgContainer>
+          </Link>
+        ) : (
+          <ImgContainer>
+            <motion.img
+              src={img}
+              alt="dog"
+              initial={{ y: 0 }}
+              whileHover={{ y: -25, scale: 1.15 }}
+            />
+          </ImgContainer>
+        )}
         <BodyContainer>
-          <h4>
-            {title_icon} {title}
-          </h4>
+          {isLink ? (
+            <Link to={slug}>
+              <h4>
+                {title_icon} {title}
+              </h4>
+            </Link>
+          ) : (
+            <h4>
+              {title_icon} {title}
+            </h4>
+          )}
           <p>{desc}</p>
           <span>{date}</span>
         </BodyContainer>

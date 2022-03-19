@@ -47,3 +47,8 @@ body {
 #gatsby-focus-wrapper {
   block-size: 100%;
 }
+
+a {
+  text-decoration: none;
+  color: var(--primary-text-color);
+}

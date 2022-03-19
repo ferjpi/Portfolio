@@ -1,5 +1,6 @@
 import React from "react"
 import Styled from "styled-components"
+import { Link } from "gatsby"
 import Card from "../card"
 
 const BlogContainerStyle = Styled.section`
@@ -21,7 +22,9 @@ function BlogSection({ blogData }) {
   return (
     <>
       <BlogContainerStyle>
-        <SectionTitle>Blog</SectionTitle>
+        <Link to="posts">
+          <SectionTitle>Blog</SectionTitle>
+        </Link>
         <SectionList>
           {blogData !== undefined &&
             blogData.length &&

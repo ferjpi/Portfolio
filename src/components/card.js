@@ -35,16 +35,13 @@ const BodyContainer = Styled.div`
   padding: 5px;
 `
 
-function Card({ title, img, date, desc }) {
-  const [hoverImg, setHoverImg] = useState({ y: 0, scale: 1 })
+function Card({ title, img, date, desc, title_icon = null }) {
   return (
     <>
       <CardContainer
         as={motion.div}
         initial={{ y: 0 }}
         whileHover={{ y: -10, scale: 1.07 }}
-        onMouseEnter={() => setHoverImg({ y: -35, scale: 1.1 })}
-        onMouseLeave={() => setHoverImg({ y: 0, scale: 1 })}
       >
         <ImgContainer>
           <motion.img
@@ -55,7 +52,9 @@ function Card({ title, img, date, desc }) {
           />
         </ImgContainer>
         <BodyContainer>
-          <h4>{title}</h4>
+          <h4>
+            {title_icon} {title}
+          </h4>
           <p>{desc}</p>
           <span>{date}</span>
         </BodyContainer>

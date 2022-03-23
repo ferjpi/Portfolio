@@ -13,8 +13,14 @@ const SectionTitle = Styled.h2`
 `
 
 const SectionList = Styled.div`
-  display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
+
+  @media(min-width: 600px) {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 `
 
 function BlogSection({ blogData }) {
@@ -28,13 +34,15 @@ function BlogSection({ blogData }) {
         <SectionList>
           {blogData !== undefined &&
             blogData.length &&
-            blogData.map(post => (
+            blogData.map(({ node: post }) => (
               <Card
-                key={post.node.id}
-                title={post.node.frontmatter.title}
-                img={post.node.frontmatter.image}
-                date={post.node.frontmatter.date}
-                desc={post.node.excerpt}
+                key={post.id}
+                title={post.frontmatter.title}
+                img={post.frontmatter.image}
+                date={post.frontmatter.date}
+                desc={post.excerpt}
+                isLink={true}
+                slug={post.fields.slug}
               />
             ))}
         </SectionList>

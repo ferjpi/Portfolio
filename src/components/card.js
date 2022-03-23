@@ -4,10 +4,26 @@ import { Link } from "gatsby"
 import { motion } from "framer-motion"
 
 const CardContainer = Styled.div`
-  inline-size: 350px;
+  inline-size: 100%;
+  margin: 0;
+  padding: 0;
 
-  margin: 0 2%;
-  padding: 7px;
+  @media(min-width: 680px) {
+    inline-size: 280px;
+    min-inline-size: 280px;
+    max-block-size: 490px;
+
+    margin: 0 2%;
+  }
+
+  @media(min-width: 800px) {
+    inline-size: 350px;
+    min-inline-size: 350px;
+    max-block-size: 490px;
+
+    margin: 0 2%;
+    padding: 7px;
+  }
 `
 
 const CardBlur = Styled.div`

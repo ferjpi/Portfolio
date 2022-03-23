@@ -15,12 +15,21 @@ const NavStyle = Styled.nav`
 `
 const ResponsiveTitle = Styled.div`
   max-inline-size: 1100px;
-  inline-size: clamp(10vw, 50vw, 1100px);
+  inline-size: 100%;
   flex-grow: 2;
   align-items: center;
 
   h1 {
-    font-size: 7rem;
+    font-size: 1.8rem;
+  }
+
+  @media(min-width: 600px) {
+    inline-size: 100%;
+    // inline-size: clamp(10vw, 50vw, 1100px);
+
+    h1 {
+      font-size: 7rem;
+    }
   }
 `
 

@@ -1,17 +1,28 @@
 import React from "react"
 import Styled from "styled-components"
-import { Link } from "gatsby"
 import Card from "../card"
 
 const ArticleStl = Styled.article`
   display: flex;
-  margin: 0 10px;
+
 `
 
 const ArticleContainerStl = Styled.section`
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+
+  @media(min-width: 680px) and (max-width: 800px) {
+    justify-content: space-between;
+  }
+
+  @media(min-width: 800px) {
+    justify-content: space-between;
+  }
+
+  @media(min-width: 1470px) {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+  }
 `
 
 const postListing = ({ posts }) => {

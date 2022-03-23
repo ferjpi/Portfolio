@@ -7,12 +7,19 @@ const ProfileContainer = Styled.section`
   min-block-size: 50vh;
   inline-size: 100%;
   display: flex;
-  justify-content: flex-end;
 
   padding: 2rem;
 
   div {
-    inline-size: 40vw;
+    inline-size: 100%;
+  }
+
+  @media(min-width: 840px) {
+    justify-content: flex-end;
+
+    div {
+      inline-size: 40vw;
+    }
   }
 `
 

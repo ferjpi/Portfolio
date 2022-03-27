@@ -1,9 +1,8 @@
 ---
 title: Promises
 date: 2021-07-16T18:06:11.216Z
-image: /assets/promises.png
+image: /assets/Promises_Portrait.svg
 ---
-# Promises
 
 In short words, a promise is an object that represents an asynchronous operation. Its status is either pending or settled, and if settled it’s either resolve or rejected.
 
@@ -15,7 +14,7 @@ As we know a _callback_ is a function that will be called at some point in the f
 
 Let’s look the follow example.
 
-```js
+```
 function asyncOperation (cb) {
     doSomeHeavyOperation((err, data) => {
         if (err) cb(err);
@@ -25,7 +24,7 @@ function asyncOperation (cb) {
 
 const handleResult = (err, data) => {
   if (err) throw new Error('Something went wrong');
-  console.log(data);  
+  console.log(data);
 };
 
 asyncOperation(handleResult);
@@ -47,7 +46,7 @@ Now, the _asyncOperation_ function returns a promise and as we know promises can
 
 _I really hope It was clear to you_
 
-```js
+```
 function asyncOperation() {
     return new Promise((resolve, reject) => {
         doSomeHeavyOperation((err, data) => {
@@ -66,7 +65,7 @@ result
 
 The second way of doing it, it's gonna help you if you are using Node.
 
-```js
+```
 const { promisify } = require('util');
 
 const doSomething = promisify(doSomeHeavyOperation);
@@ -86,7 +85,7 @@ What _promisify_ does is convert the callback based function into a promise base
 
 If you are like me maybe concept was not as clear, so let’s try to replicate what _promisify_ does.
 
-```js
+```
 function promisify(fn) {
     return new Promise((resolve, reject) => {
         fn((err, data) => {
@@ -109,7 +108,7 @@ The use of _async/await_ is great way of doing serialize execution of code.
 
 Let’s work with the follow example.
 
-```js
+```
 const { promisify } = require('util');
 const doSomething = promisify(doSomeHeavyOperation);
 
@@ -130,14 +129,14 @@ Like the previous example, I convert the callback-based function into a promise 
 
 You can also do it the next way.
 
-```js
+```
 const { promisify } = require('util');
 const doSomething = promisify(doSomeHeavyOperation);
 
 async function asyncOperation() {
     try {
       const result = await doSomething();
-      console.log(result);  
+      console.log(result);
     }
     catch(err) {
         throw new Error(err)

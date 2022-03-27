@@ -3,7 +3,6 @@ title: Closure scope
 date: 2021-07-06T19:48:12.298Z
 image: /assets/closure.jpeg
 ---
-# Closure scope
 
 We hear this question a lot in interviews, What's closure scope?. The why, is because you probably are gonna use this concept a lot.
 
@@ -13,13 +12,13 @@ The way I like to remember is imaging a woman in gestation, The baby is gonna re
 
 Let's imagine you have a function and inside that function, you have another function that makes something with the variables and params from the parent. The child function has access to the variables and params from the parent but not otherwise.
 
-```js
+```
     function initRecord(type) {
         let id = 0;
-        
+
         return (name, song) => {
             id += 1;
-            
+
             return {
                 id,
                 name,
@@ -28,14 +27,14 @@ Let's imagine you have a function and inside that function, you have another fun
             }
         }
     }
-    
+
     const genreType = initRecord('pop');
     const song1 = genreType('Jorja Smith', 'so lonely')
 ```
 
 In the example above we create a function call *init*, this function receives a param of type string and inside this function we defined a variable call *id*. *id* is initialized with *0* and we return an anonymous function that receives two params *name* and *song*. Inside the child function we increase the value of *id* in *1*. So as result with have the following:
 
-```js
+```
     { id: 1, name: 'Jorja Smith', song: 'so lonely', type: 'pop' }
 ```
 

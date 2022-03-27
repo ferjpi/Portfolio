@@ -5,23 +5,33 @@ import { graphql } from "gatsby"
 import { defineCustomElements as deckDeckGoElement } from "@deckdeckgo/highlight-code/dist/loader"
 
 import Theme from "../components/theme/theme"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
+
+// css
+import './postPage.css'
 
 deckDeckGoElement()
 
 function PostPage({ data, location, pageContext }) {
+  const imgURL = data.markdownRemark.frontmatter.image;
+  const imgExists = imgURL !== undefined && imgURL !== null && imgURL.length
+  const imgName = imgExists && imgURL.split('/')[-1]
   return (
     <Theme>
-      <SEO title={pageContext.title} />
+      <Seo title={pageContext.title} description={data.markdownRemark.excerpt} />
       <Layout location={location} postCtx={pageContext}>
         <div>
+          {
+            imgExists?
+            <img src={imgURL} alt={imgName} className="portrait_img" />
+            : null
+          }
           <h1>{data.markdownRemark.frontmatter.title}</h1>
           <div
             dangerouslySetInnerHTML={{
               __html: data.markdownRemark.html,
             }}
           ></div>
-          {/* <p>{data.markdownRemark.excerpt}</p> */}
         </div>
       </Layout>
     </Theme>
@@ -35,7 +45,9 @@ export const query = graphql`
       html
       frontmatter {
         title
+        image
       }
+      excerpt
     }
   }
 `

@@ -24,7 +24,6 @@ const SectionList = Styled.div`
 `
 
 function BlogSection({ blogData }) {
-  console.log("blogData ", blogData)
   return (
     <>
       <BlogContainerStyle>

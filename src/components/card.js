@@ -2,6 +2,7 @@ import React, { useState } from "react"
 import Styled from "styled-components"
 import { Link } from "gatsby"
 import { motion } from "framer-motion"
+import { formatDate } from "../utils/formatDate"
 
 const CardContainer = Styled.div`
   inline-size: 100%;
@@ -49,6 +50,10 @@ const ImgContainer = Styled.div`
 
 const BodyContainer = Styled.div`
   padding: 5px;
+
+  p {
+    margin-bottom: 0;
+  }
 `
 
 function Card({
@@ -101,7 +106,7 @@ function Card({
             </h4>
           )}
           <p>{desc}</p>
-          <span>{date}</span>
+          <em>{formatDate(date)}</em>
         </BodyContainer>
       </CardContainer>
     </>

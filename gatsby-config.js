@@ -20,11 +20,11 @@ module.exports = {
             },
           },
           {
-            resolve: 'gatsby-remark-embed-carbon',
+            resolve: "gatsby-remark-embed-carbon",
             options: {
-              width: '100%',
-            }
-          }
+              width: "100%",
+            },
+          },
         ],
       },
     },
@@ -74,6 +74,15 @@ module.exports = {
         ],
       },
     },
-
+    {
+      resolve: `gatsby-plugin-styled-components`,
+      options: {
+        ssr: true,
+        pure: true,
+        stylesProvider: {
+          injectFirst: true,
+        },
+      },
+    },
   ],
 }

@@ -1,7 +1,7 @@
 ---
 title: Promises
 date: 2021-07-16T18:06:11.216Z
-image: /assets/promises.png
+image: /assets/Promises_Portrait.svg
 ---
 
 In short words, a promise is an object that represents an asynchronous operation. Its status is either pending or settled, and if settled it’s either resolve or rejected.

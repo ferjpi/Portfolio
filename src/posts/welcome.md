@@ -1,6 +1,7 @@
 ---
 title: "Welcome"
 date: "09/05/2020"
+image: /assets/Welcome_portrait.svg
 ---
 
 Hi! my name is Fernando. If you're here it means that you know who I am or a least I hope. However, I'm going to introduce my self.

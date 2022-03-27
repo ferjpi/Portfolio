@@ -1,5 +1,5 @@
 ---
-title: A simple server with NodeJS and Fastify
+title: A server with NodeJS and Fastify
 date: 2022-02-02T19:14:33.089Z
 image: /assets/node_plus_fastify.png
 ---

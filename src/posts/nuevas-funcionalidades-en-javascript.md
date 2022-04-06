@@ -1,5 +1,5 @@
 ---
-title: "Nuevas Funcionalidades en JavaScript "
+title: "JavaScript: Nuevas Funcionalidades "
 date: 2022-04-06T15:31:42.755Z
 image: /assets/es_portrait.svg
 ---
